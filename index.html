@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>UTBK SNBT Study Hub</title>
+  <style>
+    body { font-family: Arial; background:#0f172a; color:white; padding:40px; }
+    .box { background:#1e293b; padding:20px; border-radius:16px; max-width:700px; }
+    button { padding:10px 16px; border:none; border-radius:10px; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>UTBK SNBT Study Hub</h1>
+    <p>Versi browser paling sederhana.</p>
+
+    <h2>Latihan Soal</h2>
+    <p>Jika 2x + 4 = 12, berapa nilai x?</p>
+    <button onclick="showAnswer()">Lihat Jawaban</button>
+    <p id="answer"></p>
+  </div>
+
+  <script>
+    function showAnswer() {
+      document.getElementById("answer").innerText =
+        "Jawaban: x = 4. Karena 2x = 8, maka x = 4.";
+    }
+  </script>
+</body>
+</html>
